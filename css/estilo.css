@@ -1,0 +1,177 @@
+/* reset do css */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  background-color: #fff;
+  color: #000;
+}
+
+.title { 
+  font-size: 2em;
+  text-align: center;
+}
+
+aside {
+  min-width: 300px;
+  padding: 0.5em;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #7F7FD5;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #91EAE4, #86A8E7, #7F7FD5);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #91EAE4, #86A8E7, #7F7FD5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */  
+}
+
+article {
+  padding: 1.5em;
+  min-height: 100vh;
+}
+
+.logo {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;  
+}
+
+.fundo-logo {
+  background-color: #fff;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2em;
+}
+
+nav {
+  margin-top: 2em;
+}
+
+nav li {
+  list-style: none;
+}
+
+nav a {
+  text-decoration: none;
+  background-color: #fff;
+  display: block;
+  margin: 1em 0;
+  padding: 0.5em 1em;
+  border-radius: 6px;
+  transition: box-shadow 500ms;
+  color: black;
+}
+
+nav a:hover {
+  box-shadow: 0 0 10px #fff;
+}
+
+.principal {
+  margin-left: 300px;
+}
+
+.sobre p, 
+.redes-sociais p, 
+.contato p, 
+.meus-trabalhos p {
+  line-height: 1.5em;
+  text-indent: 2em;
+  text-align: justify;
+  margin-top: 3em;
+}
+
+.avatar {
+  width: 200px;
+  height: 200px;
+  float: left;
+  margin-top: 3em;
+  margin-right: 1em;
+  border-radius: 20px;
+}
+
+.contato img {
+  width: 100px;
+}
+
+.meus-trabalhos .itens,
+.contato .itens {
+  display: flex;
+  justify-content: center;
+  margin-top: 3em;
+}
+
+.contato a {
+  padding: 0 1em;
+}
+
+.meus-trabalhos h2 {
+  text-align: center;
+  margin-top: 3em;
+}
+
+.meus-trabalhos img {
+  width: 100%;
+  height: 260px; 
+  border-radius: 10px 10px 0 0;
+  border-bottom: thin solid #333;
+  object-fit: cover;
+  filter: brightness(120%);
+}
+
+.meus-trabalhos .itens {
+  flex-wrap: wrap;
+}
+
+.meus-trabalhos figure {
+  text-align: center;
+  width: 100%;
+}
+
+.card {
+  width: 300px;
+  min-width: 300px;
+  max-width: 300px;
+  background-color: #fff;
+  color: #000;
+  border: solid rgb(191, 191, 211) thin;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #ccc;
+}
+
+.card div {
+  padding: 0.5em;
+}
+
+.card h3,
+.card p {
+  text-align: center;
+  margin: 0;
+}
+
+.card p {
+  margin-top: 0.5em;
+  text-indent: 0;
+}
+
+
+.meus-trabalhos .card {
+  margin: 1em;
+}
