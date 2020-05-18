@@ -11,6 +11,7 @@ html {
 
 body {
   display: flex;
+  flex-direction: column;
   min-height: 100vh;
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
@@ -24,19 +25,14 @@ body {
 }
 
 aside {
-  min-width: 300px;
-  padding: 0.5em;
-  text-align: center;
-  position: fixed;
-  top: 0;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  text-align: center;
   background: #7F7FD5;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to bottom, #91EAE4, #86A8E7, #7F7FD5);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to bottom, #91EAE4, #86A8E7, #7F7FD5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */  
 }
+
+
 
 article {
   padding: 1.5em;
@@ -47,26 +43,26 @@ article {
   width: 150px;
   height: 150px;
   object-fit: cover;
-  border-radius: 50%;  
+  border-radius: 50%;
 }
 
 .fundo-logo {
-  background-color: #fff;
-  border-radius: 50%;
-  width: 150px;
-  height: 150px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 2em;
+  display: none;
 }
 
 nav {
-  margin-top: 2em;
+  width: 100vw;
+  /* margin-top: 2em; */
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
 }
 
 nav li {
   list-style: none;
+  margin: 0 1em;
 }
 
 nav a {
@@ -82,10 +78,6 @@ nav a {
 
 nav a:hover {
   box-shadow: 0 0 10px #fff;
-}
-
-.principal {
-  margin-left: 300px;
 }
 
 .sobre p, 
@@ -171,7 +163,45 @@ nav a:hover {
   text-indent: 0;
 }
 
-
 .meus-trabalhos .card {
   margin: 1em;
+}
+
+@media (min-width: 800px) {
+  aside {
+    min-width: 300px;
+    padding: 0.5em;
+    position: fixed;
+    top: 0;
+    min-height: 100vh;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .fundo-logo {
+    display: flex;  
+    background-color: #fff;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2em;
+  }
+  
+  .principal {
+    margin-left: 300px;
+  }
+
+  nav {
+  margin-top: 2em;
+  width: 100%;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
 }
